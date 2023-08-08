@@ -1,0 +1,57 @@
+﻿@page
+@model FirstRazor.Pages.Categories.IndexModel
+
+
+
+<div class="container mt-3 ">
+    <div class="row">
+        <div class="col-10">
+            CategoryList
+        </div>
+        <div class="col-2">
+            <a asp-page="Create" class="btn btn-primary">Create Category</a>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4">
+    
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>CategoryId</th>
+                    <th>Name</th>
+                    <th>Display</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.Categories != null)
+                {
+
+                    foreach (var item in Model.Categories)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.Title</td>
+                            <td>@item.DisplayOrder</td>
+                            <td>
+                            <a asp-page="Edit" class="btn btn-primary mx-2" asp-route-id="@item.Id"> <i class="bi bi-pencil-square"></i> </a>
+                            <a asp-page="Delete" class="btn btn-danger mx-2" asp-route-id="@item.Id"><i class="bi bi-trash3-fill"></i></a>
+
+
+                        </td>
+                        </tr>
+                    }
+
+                }
+                else
+                {
+                    <tr>
+                        <td>No data Available!😁</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+
+</div>
