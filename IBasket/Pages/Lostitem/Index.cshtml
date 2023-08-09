@@ -1,0 +1,59 @@
+﻿@page
+@model IBasket.Pages.Lostitem.IndexModel
+
+
+
+<div class="container">
+
+    <div class="row p-2">
+        <div class="col-10">
+    <h2 >Missing Item List</h2>
+
+        </div>
+        <div class="col-2">
+            <a asp-page="Add" class="btn btn-primary">Add Missing Item</a>
+        </div>
+
+        <table class="table table-bordered table-striped">
+
+            <thead>
+                <tr>
+                    <th>Item Id</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Category</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null)
+                {
+                    foreach (var item in Model.LostItem)
+                    {
+                        <tr>
+
+                        <td>@item.Id</td>
+                        <td>@item.Name</td>
+                        <td>@item.Description</td>
+                        <td>@item.Category</td>
+                        <td>@item.Status</td>
+                        <td></td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td >
+                        Space is not Empty but Thanks God, It is...
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>

@@ -1,7 +1,7 @@
-using FirstRazor.Data;
+using IBasket.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace FirstRazor
+namespace IBasket
 {
     public class Program
     {

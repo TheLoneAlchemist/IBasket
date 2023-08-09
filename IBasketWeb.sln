@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstRazor", "FirstRazor\FirstRazor.csproj", "{C2C0C66F-05D4-482A-AF39-B468FDD7269F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IBasket", "FirstRazor\IBasket.csproj", "{C2C0C66F-05D4-482A-AF39-B468FDD7269F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

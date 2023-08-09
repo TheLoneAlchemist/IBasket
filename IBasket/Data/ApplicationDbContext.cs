@@ -1,7 +1,7 @@
-﻿using FirstRazor.Models;
+﻿using IBasket.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace FirstRazor.Data
+namespace IBasket.Data
 {
     public class ApplicationDbContext:DbContext
     {
@@ -11,5 +11,6 @@ namespace FirstRazor.Data
         }
 
         public DbSet<Category> Categories { get; set; }
+        public DbSet<MissingItem> MissingItems { get; set; }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace FirstRazor.Models;
+namespace IBasket.Models;
 
     public class Category
     {

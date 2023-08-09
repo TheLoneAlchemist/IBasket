@@ -1,0 +1,51 @@
+﻿@page
+@model IBasket.Pages.Lostitem.AddModel
+@{
+}
+
+
+<duv class="container">
+
+    <div class="row">
+        <div class="col-6">
+            <h3>Add a Missing Item</h3>
+        </div>
+        <div class="col-6">
+            <a asp-action="Index" class="btn btn btn-outline-dark"><span class="bi bi-backspace"></span>Back</a>
+        </div>
+    </div>
+
+    <div>
+        <form method="post">
+
+            <div>
+                <label asp-for="LostItem.Name" class="form-control"></label>
+                <input asp-for="LostItem.Name" class="form-control" />
+            </div>
+            <div>
+                <label asp-for="LostItem.Description" class="form-control"></label>
+                <input asp-for="LostItem.Description" class="form-control" />
+            </div>
+
+            <div>
+                <label asp-for="LostItem.Image" class="form-control"></label>
+                <input type="file" name="itemimg" class="form-control" />
+            </div>
+
+            <div>
+                <label asp-for="LostItem.Category" class="form-control"></label>
+                <select asp-for="LostItem.CategoryId" asp-items="@Model.categorylist" class="form-select">
+                    <option disabled selected>---Select Category---</option>
+                </select> 
+            </div>
+
+            
+            
+            <div>
+                <input type="submit" class="btn btn-outline-primary" value="Add" />
+                <a asp-page="/Index" class="btn btn-outline-dark" >Back</a>
+            </div>
+        </form>
+    </div>
+
+</duv>

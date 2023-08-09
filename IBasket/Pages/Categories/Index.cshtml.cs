@@ -1,9 +1,9 @@
-using FirstRazor.Data;
-using FirstRazor.Models;
+using IBasket.Data;
+using IBasket.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace FirstRazor.Pages.Categories
+namespace IBasket.Pages.Categories
 {
     public class IndexModel : PageModel
     {

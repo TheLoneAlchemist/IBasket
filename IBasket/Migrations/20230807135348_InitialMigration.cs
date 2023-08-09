@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace FirstRazor.Migrations
+namespace IBasket.Migrations
 {
     /// <inheritdoc />
     public partial class InitialMigration : Migration

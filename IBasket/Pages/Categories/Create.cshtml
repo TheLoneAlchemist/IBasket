@@ -1,14 +1,13 @@
 ﻿@page
-@model FirstRazor.Pages.Categories.EditModel
+@model IBasket.Pages.Categories.CreateModel
 @{
 }
 
 <div class="container mt-3">
-    <div class="text-primary" > Update Category  </div>
+    <div class="text-primary" > Create Category  </div>
     <hr />
     <form method="post" class="form-control p-4">
-        <input asp-for="Category.Id" hidden />
-        <div asp-validation-summary="ModelOnly" class="mb-2 text-danger" ></div>
+        <div asp-validation-summary="All" class="mb-2 text-danger" ></div>
         <div class="mb-3">
         <label asp-for="Category.Title" class="form-control mb-2"></label>
         <input asp-for="Category.Title" class="form-control  " />
@@ -21,8 +20,10 @@
         <span asp-validation-for="Category.DisplayOrder" class="text-danger"></span>
         </div>
         <div class="d-grid gap-2 d-flex">
-        <input type="submit" class="btn btn-outline-info w-25" value="Update" />
-            <a asp-page="Index" class="btn btn-outline-dark  w-25 "> Back to List </a>
+
+        <input type="submit" class="btn btn-outline-info w-25 "  value="Create"/>
+        <a asp-page="Index" class="btn btn-outline-dark  w-25 " > Back to List </a>
+        
         </div>
     </form>
 </div>
