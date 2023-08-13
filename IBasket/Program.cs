@@ -1,4 +1,4 @@
-using IBasket.Data;
+using IBasket.DataAccess;
 using Microsoft.EntityFrameworkCore;
 
 namespace IBasket
